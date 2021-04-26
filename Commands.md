@@ -1,6 +1,5 @@
 # Console Commands
 
-[TOC]
 
 ## `action_cut`
 
