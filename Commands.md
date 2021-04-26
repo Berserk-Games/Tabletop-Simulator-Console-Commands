@@ -6,9 +6,9 @@
 
 Cut specified component at specified point.
 
-USAGE: `action_cut [-p &lt;point>|-c <count>] [<guid>...]`
+USAGE: `action_cut [-p <point>|-c <count>] [<guid>...]`
 
-Cut deck/stack in half. Cut point &lt;defaults to splitting in half, or use one of:
+Cut deck/stack in half. Cut point defaults to splitting in half, or use one of:
 
 -p = between 0.0 and 1.0, a ratio over container size.
 
@@ -21,7 +21,7 @@ Deal from specified component.
 
 USAGE: `action_deal [-c <count>] <guid> [<player>...]`
 
-Deal <count> cards (default 1) from component specified by <guid> to each <player>. If no <player> provided then deal to each seated player.
+Deal &lt;count&gt; cards (default 1) from component specified by &lt;guid&gt; to each &lt;player&gt;. If no &lt;player&gt; provided then deal to each seated player.
 
 
 ## `action_draw`
@@ -30,7 +30,7 @@ Draw from specified component.
 
 USAGE: `action_draw [-c <count>] [<guid>...]`
 
-Draw from component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Draw from component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
  -c = specify number of cards to draw
 
@@ -41,7 +41,7 @@ Flip specified component.
 
 USAGE: `action_flip [<guid>...]`
 
-Flip component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Flip component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_group`
@@ -50,7 +50,7 @@ Group specified components.
 
 USAGE: `action_group [<guid>...]`
 
-Group components specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Group components specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_layout`
@@ -59,7 +59,7 @@ Layout specified component.
 
 USAGE: `action_layout [<guid>...]`
 
-Layout component specified by <guid> if its in (or is) a valid Layout Zone. If no <guid> provided then the mouse/selection will be used.
+Layout component specified by &lt;guid&gt; if its in (or is) a valid Layout Zone. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_lock`
@@ -68,7 +68,7 @@ Lock specified component.
 
 USAGE: `action_lock [<guid>...]`
 
-Lock/unlock component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Lock/unlock component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_popout`
@@ -77,7 +77,7 @@ Pop-out to screen specified component.
 
 USAGE: `action_popout [<guid>...]`
 
-Pop-out to screen component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Pop-out to screen component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_randomize`
@@ -86,7 +86,7 @@ Randomize (shuffle/roll/etc.) specified component.
 
 USAGE: `action_randomize [<guid>...]`
 
-Randomize component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Randomize component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_rotate`
@@ -95,9 +95,9 @@ Rotate specified component.
 
 USAGE: `action_rotate > [-z] <angle> [<guid>...]`
 
-Rotate component specified by <guid>. <angle> is a multiple of 15.
+Rotate component specified by &lt;guid&gt;. &lt;angle&gt; is a multiple of 15.
 
-If no <guid> provided then the mouse/selection will be used.
+If no &lt;guid&gt; provided then the mouse/selection will be used.
 
  -z = rotate around z axis instead.
 
@@ -108,11 +108,11 @@ Search specified component.
 
 USAGE: `action_search [-s <search text>] [-c <count>] [<guid>]`
 
-Search component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Search component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
- -s <text> = specific search text
+ -s &lt;text&gt; = specific search text
 
- -c <count> = max cards when searching deck
+ -c &lt;count&gt; = max cards when searching deck
 
 
 ## `action_split`
@@ -121,7 +121,7 @@ Split specified component into piles.
 
 USAGE: `action_split <piles> [<guid>...]`
 
-Split container specified by <guid> into <piles>.
+Split container specified by &lt;guid&gt; into &lt;piles&gt;.
 
 
 ## `action_spread`
@@ -130,7 +130,7 @@ Spread specified deck component face-up across table.
 
 USAGE: `action_spread [-d <distance>] [<guid>]`
 
-Split container specified by <guid> into <piles>.
+Split container specified by &lt;guid&gt; into &lt;piles&gt;.
 
 
 ## `action_state_next`
@@ -139,7 +139,7 @@ Increment state of specified component.
 
 USAGE: `action_state_next [<guid>]`
 
-Increment state of component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Increment state of component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `action_state_prev`
@@ -148,7 +148,7 @@ Decrement state of specified component.
 
 USAGE: `action_state_prev [<guid>]`
 
-Decrement state of component specified by <guid>. If no <guid> provided then the mouse/selection will be used.
+Decrement state of component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then the mouse/selection will be used.
 
 
 ## `add`
@@ -157,7 +157,7 @@ Add a value to a numerical variable.
 
 USAGE: `add <variable> <value> [<modulus>]`
 
-Sets <variable> to its current value + <value>, modulo the optional parameter if present.
+Sets &lt;variable&gt; to its current value + &lt;value&gt;, modulo the optional parameter if present.
 
 
 ## `alias`
@@ -166,7 +166,7 @@ Creates an alias for another command using specified parameters as defaults.
 
 USAGE: `alias <label> <command> [<parameters] OR alias <label> -d OR alias <new_prefix>* <old_prefix>*`
 
-Creates an alternate way to call <command>.  If <parameters> are provided they will automatically be applied when using that alias.
+Creates an alternate way to call &lt;command&gt;.  If &lt;parameters&gt; are provided they will automatically be applied when using that alias.
 
 Use * create an alias for all commands with specified prefix.
 
@@ -174,7 +174,7 @@ Use * create an alias for all commands with specified prefix.
 
 
 
-If <label> is a toggle variable you may prefix with + or - to attach <command> to it; when it changes to that value the command will execute.
+If &lt;label&gt; is a toggle variable you may prefix with + or - to attach &lt;command&gt; to it; when it changes to that value the command will execute.
 
 
 ## `append`
@@ -183,7 +183,7 @@ Add text to a text variable.
 
 USAGE: `append [-n] <variable> [<text>]`
 
-Appends <text> to <variable>.  If no <text> specified then appends last entered command (before this one).
+Appends &lt;text&gt; to &lt;variable&gt;.  If no &lt;text&gt; specified then appends last entered command (before this one).
 
 -n = do not insert newline before appending.
 
@@ -240,9 +240,9 @@ Bind a command to a key.
 
 USAGE: `bind [[+|-|!]<key> [<command>]]`
 
-If <command> is specified then it is bound to trigger whenever <key> is pressed.
+If &lt;command&gt; is specified then it is bound to trigger whenever &lt;key&gt; is pressed.
 
-Optional prefixes on <key>:
+Optional prefixes on &lt;key&gt;:
 
    + = trigger on key press (same as no prefix)
 
@@ -250,7 +250,7 @@ Optional prefixes on <key>:
 
    ! = trigger on key long press
 
-If no <command> specified will display whatever <key> is currently bound to, or all bindings if no <key> specified.
+If no &lt;command&gt; specified will display whatever &lt;key&gt; is currently bound to, or all bindings if no &lt;key&gt; specified.
 
 
 ## `bool`
@@ -259,7 +259,7 @@ Creates a variable which can be ON or OFF.
 
 USAGE: `store_toggle <variable> [<value>]`
 
-Creates a variable which can be ON or OFF.  It will be set to <value> if it is provided, else OFF.
+Creates a variable which can be ON or OFF.  It will be set to &lt;value&gt; if it is provided, else OFF.
 
 
 ## `bootexec`
@@ -279,7 +279,7 @@ Broadcast text.
 
 USAGE: `broadcast <text>`
 
-Broadcasts the specified <text>.
+Broadcasts the specified &lt;text&gt;.
 
 
 ## `camera_clear_saved_positions`
@@ -330,7 +330,7 @@ Restore camera saved positions.
 
 USAGE: `camera_restore_saved_positions [<label>]`
 
-Restore camera saved positions.  Read from default store, or <label> if specified.
+Restore camera saved positions.  Read from default store, or &lt;label&gt; if specified.
 
 
 ## `camera_rotation_rate`
@@ -372,7 +372,7 @@ Store camera saved positions.
 
 USAGE: `camera_store_saved_positions [<label>]`
 
-Store camera saved positions.  Stores as default, or as <label> if specified.  If no saved cameras exist then <label> will be removed.
+Store camera saved positions.  Stores as default, or as &lt;label&gt; if specified.  If no saved cameras exist then &lt;label&gt; will be removed.
 
 
 ## `card_is_a_deck_for_hotkeys`
@@ -505,9 +505,9 @@ Allow the user to make a choice from a drop-down.
 
 USAGE: `choose <variable> [-t <title>] <option> [<option>...]`
 
-If <variable> is a number, set it to index of selected option.
+If &lt;variable&gt; is a number, set it to index of selected option.
 
-If <variable> is text, set it to the selected option.
+If &lt;variable&gt; is text, set it to the selected option.
 
 
 ## `clear`
@@ -525,7 +525,7 @@ Your current player color.  Changing it will change your seat.
 
 USAGE: `color [<color>]`
 
-Returns your current color.  If <color> provided will attempt to swap you to that color.
+Returns your current color.  If &lt;color&gt; provided will attempt to swap you to that color.
 
 
 ## `commands`
@@ -651,7 +651,7 @@ Currently examined component.
 
 USAGE: `component_examine [<GUID>|<color>]`
 
-If <GUID> specified then start examining that component. If <color> specified then start examining that player's hand zone.
+If &lt;GUID&gt; specified then start examining that component. If &lt;color&gt; specified then start examining that player's hand zone.
 
 
 ## `component_hiders` (admin)
@@ -660,7 +660,7 @@ Displays any hiders attached to component.
 
 USAGE: `component_hiders [<guid>]`
 
-Displays any hiders attached to component specified by <guid>. If no <guid> provided then that last held component will be used.
+Displays any hiders attached to component specified by &lt;guid&gt;. If no &lt;guid&gt; provided then that last held component will be used.
 
 
 ## `component_locked`
@@ -669,7 +669,7 @@ Locked state of specified component.
 
 USAGE: `component_locked <guid> [<locked>]`
 
-Locked state of component specified by <guid>.
+Locked state of component specified by &lt;guid&gt;.
 
 
 ## `component_move`
@@ -678,7 +678,7 @@ Move a component.
 
 USAGE: `component_move <GUID> [-f] <translation>`
 
-Move specified component.  <translation> is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
+Move specified component.  &lt;translation&gt; is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
 
 
 ## `component_override_defaults`
@@ -700,7 +700,7 @@ Set position of a component.
 
 USAGE: `component_position <GUID> [-f] <position>`
 
-Move specified component to specified <position>.  <position> is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
+Move specified component to specified &lt;position&gt;.  &lt;position&gt; is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
 
 
 ## `component_rotate`
@@ -709,7 +709,7 @@ Rotate a component.
 
 USAGE: `component_rotate <GUID> [-f] <rotation>`
 
-Rotate specified component.  <rotation> is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
+Rotate specified component.  &lt;rotation&gt; is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
 
 
 ## `component_rotation`
@@ -718,7 +718,7 @@ Set rotation of a component.
 
 USAGE: `component_rotation <GUID> [-f] <rotation>`
 
-Rotate specified component to specified <rotation>.  <rotation> is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
+Rotate specified component to specified &lt;rotation&gt;.  &lt;rotation&gt; is a vector (x,y,z).  Use '-' for any axis to leave it as is.-f = fast
 
 
 ## `component_spread_cards_per_row`
@@ -760,7 +760,7 @@ State of specified component.
 
 USAGE: `component_state <guid> [<state>]`
 
-State of component specified by <guid>.
+State of component specified by &lt;guid&gt;.
 
 
 ## `component_tooltip_delay`
@@ -978,7 +978,7 @@ Echo text to the system console.
 
 USAGE: `echo <text>`
 
-Display the specified <text> in the System Console.
+Display the specified &lt;text&gt; in the System Console.
 
 
 ## `edit`
@@ -1045,7 +1045,7 @@ Echo text variable to the system console escaped to avoid '[' formatting.
 
 USAGE: `escape <variable>`
 
-Display the specified <variable> in the System Console without applying any '[' format codes it contains.
+Display the specified &lt;variable&gt; in the System Console without applying any '[' format codes it contains.
 
 
 ## `eval`
@@ -1054,7 +1054,7 @@ Evaluate statement.
 
 USAGE: `eval <variable> <statement>`
 
-Evaluate <statement> and store result in <variable>.  <statement> can include numeric variables, vector components, arithmetic operators, and these functions:
+Evaluate &lt;statement&gt; and store result in &lt;variable&gt;.  &lt;statement&gt; can include numeric variables, vector components, arithmetic operators, and these functions:
 
 abs, acos, asin, atan, atan2, ceil, cos, cosh, deg, exp, floor, fmod, frexp, ldexp, log, max, min, modf, pow, rad, random, sin, sinh, sqrt, tan, tanh, pi
 
@@ -1091,7 +1091,7 @@ Execute a series of commands.
 
 USAGE: `exec [-q] <commands> OR exec [-q] -v <string_variable>`
 
-Execute a string of commands separated by ';', or each line in <string_variable>, one after another.
+Execute a string of commands separated by ';', or each line in &lt;string_variable&gt;, one after another.
 
    -q = quiet mode
 
@@ -1153,7 +1153,7 @@ Find a component.
 
 USAGE: `find OR find [-c] [-name <text>] [-type <text>] [-desc <text>]`
 
-Without parameters will return last found component (use as <<find>> in the parameter of another command).
+Without parameters will return last found component (use as &lt;&lt;find&gt;&gt; in the parameter of another command).
 
 With parameters, sets itself to first component which matches all selectors.
 
@@ -1166,7 +1166,7 @@ Creates a numeric variable.
 
 USAGE: `store_number <variable> [<value>]`
 
-Creates a numeric variable.  It will be set to <value> if it is provided, else 0.
+Creates a numeric variable.  It will be set to &lt;value&gt; if it is provided, else 0.
 
 
 ## `fog`
@@ -1188,12 +1188,12 @@ Assign key to game-defined hotkey index.
 
 USAGE: `game_hotkey_bind <index> <key> [<key2>]`
 
-Assign <key> to the game-defined hotkey specified by <index> (starts at 0).
+Assign &lt;key&gt; to the game-defined hotkey specified by &lt;index&gt; (starts at 0).
 
 
 ## `game_hotkey_config_can_open`
 
-When ON games may cause the [Options->Game Keys] settings window to show.
+When ON games may cause the [Options-&gt;Game Keys] settings window to show.
 
 USAGE: `game_hotkey_config_can_open [ON|OFF|TOGGLE]`
 
@@ -1235,11 +1235,11 @@ For example, `!hand_component_hotkey_draw` = '`hand_component_hotkey_draw TOGGLE
 
 ## `help`
 
-Lists all available commands or use 'help <command>' for help on a specific command.
+Lists all available commands or use 'help &lt;command&gt;' for help on a specific command.
 
 USAGE: `help [<command> | -c]`
 
-If <command> is provided detailed help for it is displayed, otherwise all available commands are listed.
+If &lt;command&gt; is provided detailed help for it is displayed, otherwise all available commands are listed.
 
  -c = copy all help text to clipboard
 
@@ -1272,7 +1272,7 @@ Highlights specified component.
 
 USAGE: `highlight <GUID> [duration] [<color>]`
 
-Highlights specified component.  You may specify a <duration> in seconds, and a <color>.
+Highlights specified component.  You may specify a &lt;duration&gt; in seconds, and a &lt;color&gt;.
 
 
 ## `host_game`
@@ -1281,11 +1281,11 @@ Hosts a table.
 
 USAGE: `host_game [<seats> [<name> <password>]|[-h]] [-f]`
 
-If <seats> is one or missing then start a singleplayer server.
+If &lt;seats&gt; is one or missing then start a singleplayer server.
 
 
 
-<name> and <password> default to 'default_host_name' and 'default_host_password'.
+&lt;name&gt; and &lt;password&gt; default to 'default_host_name' and 'default_host_password'.
 
 -f = force (disconnect if currently hosting or connected)
 
@@ -1510,7 +1510,7 @@ Creates a numeric variable.
 
 USAGE: `store_number <variable> [<value>]`
 
-Creates a numeric variable.  It will be set to <value> if it is provided, else 0.
+Creates a numeric variable.  It will be set to &lt;value&gt; if it is provided, else 0.
 
 
 ## `jigsaw_animate_box`
@@ -1786,7 +1786,7 @@ Cannot be set; displays the last returned value.
 
 USAGE: `last`
 
-Displays the last returned value. Usually used by reference (i.e. <<last>>)
+Displays the last returned value. Usually used by reference (i.e. &lt;&lt;last&gt;&gt;)
 
 
 ## `lift_height`
@@ -1802,7 +1802,7 @@ Load a game.
 
 USAGE: `load <filename>`
 
-Load game stored as <filename>.
+Load game stored as &lt;filename&gt;.
 
 
 ## `log_display_tag`
@@ -1856,7 +1856,7 @@ Controls how verbose logging is
 
 USAGE: `log_output_format <format>`
 
-<format> may be one of:
+&lt;format&gt; may be one of:
 
  0 = Truncated
 
@@ -1871,7 +1871,7 @@ Sets default styling of log entries.
 
 USAGE: `log_style_default <color> <prefix> <postfix>`
 
-<color> can be a named color or #RRGGBB.
+&lt;color&gt; can be a named color or #RRGGBB.
 
 
 ## `log_style_highlight`
@@ -1880,7 +1880,7 @@ Sets highlight styling of log entries.
 
 USAGE: `log_style_highlight <color> <prefix> <postfix>`
 
-<color> can be a named color or #RRGGBB.
+&lt;color&gt; can be a named color or #RRGGBB.
 
 
 ## `log_style_tag`
@@ -1889,7 +1889,7 @@ Sets the style of a log tag.  Can also be done in Lua with logStyle.
 
 USAGE: `log_style_tag <name> <color> <prefix> <postfix>`
 
-<color> can be a named color or #RRGGBB.
+&lt;color&gt; can be a named color or #RRGGBB.
 
 
 ## `log_tags_clear`
@@ -2200,7 +2200,7 @@ Multiplies a numerical variable.
 
 USAGE: `multiply <variable> <value>`
 
-Sets <variable> to its current value * <value>.
+Sets &lt;variable&gt; to its current value * &lt;value&gt;.
 
 
 ## `music_add`
@@ -2209,7 +2209,7 @@ Add song to playlist.
 
 USAGE: `music_add <url> [<name>]`
 
-Import music file at <url> and add it to playlist.
+Import music file at &lt;url&gt; and add it to playlist.
 
 -p = Play it.
 
@@ -2506,7 +2506,7 @@ Execute a series of commands.
 
 USAGE: `exec [-q] <commands> OR exec [-q] -v <string_variable>`
 
-Execute a string of commands separated by ';', or each line in <string_variable>, one after another.
+Execute a string of commands separated by ';', or each line in &lt;string_variable&gt;, one after another.
 
    -q = quiet mode
 
@@ -2533,7 +2533,7 @@ Save current game.
 
 USAGE: `save <filename> [<gamename>]`
 
-Saves game as <filename>.  Optionally provide a <gamename>.
+Saves game as &lt;filename&gt;.  Optionally provide a &lt;gamename&gt;.
 
 
 ## `say_game`
@@ -2542,7 +2542,7 @@ Send text as if typed into Game tab.
 
 USAGE: `say_game <message>`
 
-Sends <message> to Game tab as if you had typed it in.
+Sends &lt;message&gt; to Game tab as if you had typed it in.
 
 
 ## `say_global`
@@ -2551,7 +2551,7 @@ Send text as if typed into Global tab.
 
 USAGE: `say_global <message>`
 
-Sends <message> to Global tab as if you had typed it in.
+Sends &lt;message&gt; to Global tab as if you had typed it in.
 
 
 ## `say_team`
@@ -2560,7 +2560,7 @@ Send text as if typed into Team tab.
 
 USAGE: `say_team <message>`
 
-Sends <message> to Team tab as if you had typed it in.
+Sends &lt;message&gt; to Team tab as if you had typed it in.
 
 
 ## `search_close_after_take`
@@ -2593,7 +2593,7 @@ Emulates a keypress (or other input).
 
 USAGE: `sendkey <key>`
 
-Emulates Unity KeyCode <key> as if it were pressed by the user.
+Emulates Unity KeyCode &lt;key&gt; as if it were pressed by the user.
 
 
 ## `skip`
@@ -2602,9 +2602,9 @@ Skip forward in batch script.
 
 USAGE: `skip <label> [<variable> [<comparison> <value> [threshold]]]`
 
-Only applicable within a script.  If only <label> specified, or <variable> (or its <comparison> to <value>) is positive, then skip ahead to <label>.
+Only applicable within a script.  If only &lt;label&gt; specified, or &lt;variable&gt; (or its &lt;comparison&gt; to &lt;value&gt;) is positive, then skip ahead to &lt;label&gt;.
 
-If <threshold> specified then = and <> will use it.Comparisons: = < > <= >= <>
+If &lt;threshold&gt; specified then = and &lt;&gt; will use it.Comparisons: = &lt; &gt; &lt;= &gt;= &lt;&gt;
 
 
 ## `spectator_activate_with_resolution`
@@ -2630,7 +2630,7 @@ Activates spectator window with specified resolution.
 
 ## `spectator_camera_attachment`
 
-<GUID> of component or <PLAYER COLOR> of pointer which spectator camera will follow when spectator_camera_follow_attachment is ON.
+&lt;GUID&gt; of component or &lt;PLAYER COLOR&gt; of pointer which spectator camera will follow when spectator_camera_follow_attachment is ON.
 
 USAGE: `spectator_camera_attachment [value] OR spectator_camera_attachment -e`
 
@@ -2794,7 +2794,7 @@ For example, `!spectator_camera_stay_upright` = '`spectator_camera_stay_upright 
 
 ## `spectator_camera_target`
 
-<GUID> or <PLAYER COLOR> for spectator camera to look at.
+&lt;GUID&gt; or &lt;PLAYER COLOR&gt; for spectator camera to look at.
 
 USAGE: `spectator_camera_target [value] OR spectator_camera_target -e`
 
@@ -3022,7 +3022,7 @@ Creates a numeric variable.
 
 USAGE: `store_number <variable> [<value>]`
 
-Creates a numeric variable.  It will be set to <value> if it is provided, else 0.
+Creates a numeric variable.  It will be set to &lt;value&gt; if it is provided, else 0.
 
 
 ## `store_text`
@@ -3031,11 +3031,11 @@ Creates a text variable.
 
 USAGE: `store_text <variable> [<value>]`
 
-Creates a text variable.  It will be set to <value> if it is provided.
+Creates a text variable.  It will be set to &lt;value&gt; if it is provided.
 
 If in a multiline batch (such as autoexec), leaving value blank will set
 
-it to the block of text which follows, until 'end <variable>'
+it to the block of text which follows, until 'end &lt;variable&gt;'
 
 
 ## `store_toggle`
@@ -3044,7 +3044,7 @@ Creates a variable which can be ON or OFF.
 
 USAGE: `store_toggle <variable> [<value>]`
 
-Creates a variable which can be ON or OFF.  It will be set to <value> if it is provided, else OFF.
+Creates a variable which can be ON or OFF.  It will be set to &lt;value&gt; if it is provided, else OFF.
 
 
 ## `string`
@@ -3053,11 +3053,11 @@ Creates a text variable.
 
 USAGE: `store_text <variable> [<value>]`
 
-Creates a text variable.  It will be set to <value> if it is provided.
+Creates a text variable.  It will be set to &lt;value&gt; if it is provided.
 
 If in a multiline batch (such as autoexec), leaving value blank will set
 
-it to the block of text which follows, until 'end <variable>'
+it to the block of text which follows, until 'end &lt;variable&gt;'
 
 
 ## `subtract`
@@ -3066,7 +3066,7 @@ Set a numerical variable to itself subtracted from a value.
 
 USAGE: `subtract <variable> <value>`
 
-Sets <variable> to <value> - current value.
+Sets &lt;variable&gt; to &lt;value&gt; - current value.
 
 
 ## `team`
@@ -3075,7 +3075,7 @@ Your current team.
 
 USAGE: `team [<team>]`
 
-Returns your current team.  If <team> provided will attempt to swap you to that team.
+Returns your current team.  If &lt;team&gt; provided will attempt to swap you to that team.
 
 
 ## `timestamp_all`
@@ -3464,7 +3464,7 @@ Export language translation as CSV.
 
 USAGE: `translation_export <language> <filename>`
 
-Save language translations for specified <language> in CSV file <filename>.
+Save language translations for specified &lt;language&gt; in CSV file &lt;filename&gt;.
 
 
 ## `translation_for_arb`
@@ -3792,7 +3792,7 @@ Import language translations in CSV.
 
 USAGE: `translation_import <filename>`
 
-Load all language translations in CSV file <filename>.
+Load all language translations in CSV file &lt;filename&gt;.
 
 
 ## `ui_anchor`
@@ -3904,7 +3904,7 @@ Add an on-screen button which performs a command.
 
 USAGE: `ui_button <label> <x> <y> [-f <fontsize>] [-w <width]] [-h <height>] [-s|-l] <command>`
 
-Add a button with specified position which will perform <command> when clicked.
+Add a button with specified position which will perform &lt;command&gt; when clicked.
 
 -s = silent
 
@@ -4098,7 +4098,7 @@ Whether the on-screen keyboard is shown automatically.
 
 USAGE: `ui_keyboard_default_state <mode>`
 
-<mode> may be one of:
+&lt;mode&gt; may be one of:
 
  0 = Disabled
 
@@ -5422,7 +5422,7 @@ Add an on-screen checkbox attached to a toggle variable.
 
 USAGE: `ui_toggle <label> <x> <y> [-r] [-f <fontsize>] [-c <color>] [-o <outline>] [-d <dropshadow>] [-w <width>] [-s|-l] <variable>`
 
-Add a checkbox with specified position which will be attatched to <variable>.
+Add a checkbox with specified position which will be attatched to &lt;variable&gt;.
 
 -r = label on right
 
@@ -5430,7 +5430,7 @@ Add a checkbox with specified position which will be attatched to <variable>.
 
 -l = loud
 
-<outline> and <dropshadow> specify color.
+&lt;outline&gt; and &lt;dropshadow&gt; specify color.
 
 
 ## `ui_tooltip_delay`
@@ -5535,7 +5535,7 @@ For example, `!ui_visualize_spawn_hide_window` = '`ui_visualize_spawn_hide_windo
 
 ## `ui_visualize_spawn_in_air`
 
-When ON objects will spawn above the table instead of directly on the table. Holding <CTRL> flips this behaviour.
+When ON objects will spawn above the table instead of directly on the table. Holding &lt;CTRL&gt; flips this behaviour.
 
 USAGE: `ui_visualize_spawn_in_air [ON|OFF|TOGGLE]`
 
@@ -5589,7 +5589,7 @@ Unbinds a key.
 
 USAGE: `unbind [-a] <key>`
 
-Removes any command bound to <key>. If '-a' specified then unbinds all versions of <key> (+-!).
+Removes any command bound to &lt;key&gt;. If '-a' specified then unbinds all versions of &lt;key&gt; (+-!).
 
 
 ## `unload_interval`
@@ -5620,7 +5620,7 @@ Get the X component of a vector variable.
 
 USAGE: `vector_x [<variable>]`
 
-If <variable> specified then set vector_x to be its X component.
+If &lt;variable&gt; specified then set vector_x to be its X component.
 
 
 ## `vector_y`
@@ -5629,7 +5629,7 @@ Get the Y component of a vector variable.
 
 USAGE: `vector_y [<variable>]`
 
-If <variable> specified then set vector_y to be its Y component.
+If &lt;variable&gt; specified then set vector_y to be its Y component.
 
 
 ## `vector_z`
@@ -5638,7 +5638,7 @@ Get the Z component of a vector variable.
 
 USAGE: `vector_z [<variable>]`
 
-If <variable> specified then set vector_z to be its Z component.
+If &lt;variable&gt; specified then set vector_z to be its Z component.
 
 
 ## `version`
@@ -5770,7 +5770,7 @@ For example, `!vr_hand_view_hide_on_grab` = '`vr_hand_view_hide_on_grab TOGGLE`'
 
 ## `vr_hand_view_scale`
 
-Scale applied to virtual hand. Must be > 0.
+Scale applied to virtual hand. Must be &gt; 0.
 
 USAGE: `vr_hand_view_scale [value]`
 
@@ -5943,7 +5943,7 @@ Controls whether pad down on the left controller is bindable, displays the tool 
 
 USAGE: `vr_left_controller_mode_pad_down <mode>`
 
-<mode> may be one of:
+&lt;mode&gt; may be one of:
 
  0 = Bindable
 
@@ -6008,7 +6008,7 @@ Controls whether the virtual hand view is disabled, or attached to the left or r
 
 USAGE: `vr_mode_hand_view <mode>`
 
-<mode> may be one of:
+&lt;mode&gt; may be one of:
 
  0 = Detached (turned off)
 
@@ -6047,7 +6047,7 @@ Controls whether the screen UI is detached, or attached to the left or right con
 
 USAGE: `vr_mode_ui_attachment <mode>`
 
-<mode> may be one of:
+&lt;mode&gt; may be one of:
 
  0 = Detached
 
@@ -6117,7 +6117,7 @@ Controls whether pad down on the right controller is bindable, displays the tool
 
 USAGE: `vr_right_controller_mode_pad_down <mode>`
 
-<mode> may be one of:
+&lt;mode&gt; may be one of:
 
  0 = Bindable
 
@@ -6168,7 +6168,7 @@ Displays value of `vr_right_controller_zoom_scale`.  If value parameter provided
 ## `vr_scale_rotate_rate`
 
 When you scale/rotate in VR your movement is smoothed.  This sets how fast you approach the desired position.
-Three values: <scale> <rotation> <position>
+Three values: &lt;scale&gt; &lt;rotation&gt; &lt;position&gt;
 
 USAGE: `vr_scale_rotate_rate [x y z]`
 
@@ -6441,7 +6441,7 @@ Waits for the specified amount of time.  Useful in scripts.
 
 USAGE: `wait <delay>`
 
-Waits for <delay> seconds before executing the next command in a script.
+Waits for &lt;delay&gt; seconds before executing the next command in a script.
 
 
 ## `zoom_always`
