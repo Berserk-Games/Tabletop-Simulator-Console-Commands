@@ -8,7 +8,7 @@ Cut specified component at specified point.
 
 USAGE: `action_cut [-p &lt;point>|-c <count>] [<guid>...]`
 
-Cut deck/stack in half. Cut point defaults to splitting in half, or use one of:
+Cut deck/stack in half. Cut point &lt;defaults to splitting in half, or use one of:
 
 -p = between 0.0 and 1.0, a ratio over container size.
 
